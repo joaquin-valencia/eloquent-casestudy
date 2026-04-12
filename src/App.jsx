@@ -155,8 +155,9 @@ export default function App() {
   const totalSpent = clients.reduce((sum, c) => sum + c.totalSpent, 0)
   const enterpriseSpent = clients
     .filter(c => c.segment === 'Enterprise')
-    .reduce((sum, c) => sum + c.totalSpent, 0)
-  const enterpriseRevenue = ((enterpriseSpent / totalSpent) * 100).toFixed(1)
+    .reduce((sum, c) => sum + initialClients.find(i => i.id === c.id).totalSpent, 0)
+  const initialTotal = initialClients.reduce((sum, c) => sum + c.totalSpent, 0)
+  const enterpriseRevenue = ((enterpriseSpent / initialTotal) * 100).toFixed(1)
 
   const churnRisk = clients.filter(c => {
     const lastActive = new Date(c.lastActive)
