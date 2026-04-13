@@ -59,7 +59,9 @@ function DetailPage({ client, onBack, onSave, avgLTV, enterpriseRevenue, churnRi
           <div className="kpi-value">{churnRisk}</div>
           <div className="kpi-sub">Enterprise/SME &gt; 60 days</div>
         </div>
-        <div className="sidebar-footer">⚡ Eloquent AI</div>
+        <div className="sidebar-footer">
+          <a href="https://eloquentai.co/" target="_blank" rel="noopener noreferrer" className="sidebar-footer">⚡ Eloquent AI</a>
+        </div>
       </aside>    
 
       <main className="main">
@@ -84,8 +86,8 @@ function DetailPage({ client, onBack, onSave, avgLTV, enterpriseRevenue, churnRi
                 <label>Client Segment</label>
                 <select value={segment} onChange={e => setSegment(e.target.value)}>
                   <option>Enterprise</option>
-                  <option>Startup</option>
                   <option>SME</option>
+                  <option>Startup</option>
                   <option>Individual</option>
                 </select>
               </div>
@@ -205,7 +207,9 @@ export default function App() {
           <div className="kpi-value">{churnRisk}</div>
           <div className="kpi-sub">Enterprise/SME &gt; 60 days</div>
         </div>
-        <div className="sidebar-footer">⚡ Eloquent AI</div>
+        <div className="sidebar-footer">
+          <a href="https://eloquentai.co/" target="_blank" rel="noopener noreferrer" className="sidebar-footer">⚡ Eloquent AI</a>
+        </div>
       </aside>
 
       <main className="main">
