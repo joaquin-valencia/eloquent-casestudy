@@ -1,16 +1,41 @@
-# React + Vite
+# Eloquent AI - Client Entities Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A replication of the Eloquent AI reference interface built with React and Vite.
 
-Currently, two official plugins are available:
+## Live Site
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[View the hosted site](https://eloquent-casestudy.vercel.app/)
 
-## React Compiler
+## About
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project replicates a client entities dashboard including:
 
-## Expanding the ESLint configuration
+- KPI cards with calculated metrics (Avg Customer LTV, Enterprise Revenue, Churn Risk)
+- A client entities table with 15 rows of data
+- Detail pages for the first 5 rows with editable fields
+- Cross-page consistency — edits saved on the detail page update the dashboard KPIs
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## How to Run Locally
+
+1. Clone the repository
+```bash
+git clone https://github.com/joaquin-valencia/eloquent-casestudy.git
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Start the development server
+```bash
+npm run dev
+```
+
+4. Open your browser and go to `http://localhost:5173`
+
+## Tech Stack
+
+- React
+- Vite
+- CSS
